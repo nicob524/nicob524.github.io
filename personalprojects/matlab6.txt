@@ -1,0 +1,38 @@
+clear all
+close all
+clc
+ 
+t=linspace(0,2*pi,1000);
+x1=cos(t);
+x2=sin(t);
+x=[x1;x2];
+ 
+plot(x1,x2,'m');
+hold on
+ 
+A1=[2 0;0 3];
+Aa=A1*x;
+ 
+x1A1=Aa(1,1:1000);
+x2A1=Aa(2,1:1000);
+plot(x1A1,x2A1,'b');
+hold on
+ 
+A2=[1 2;3 4];
+Ab=A2*x;
+ 
+x1A2=Ab(1,1:1000);
+x2A2=Ab(2,1:1000);
+plot(x1A2,x2A2,'g');
+hold on
+ 
+ 
+A3=[1 2;2 4];
+Ac=A3*x;
+ 
+x1A3=Ac(1,1:1000);
+x2A3=Ac(2,1:1000);
+plot(x1A3,x2A3,'r');
+hold on
+ 
+axis([-5,5,-5,5])

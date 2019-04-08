@@ -1,0 +1,24 @@
+clear all 
+close all
+clc
+ 
+t = linspace(0,2*pi,1000);
+x1 = cos(t);
+x2 = sin(t);
+x = [ x1; x2];
+plot( x1, x2,'b');
+hold on
+ 
+t = 0:(2*pi/999):2*pi;
+A1 = [ 2 0; 0 3];
+plot(2*x1, 3*x2,'r');
+ 
+ 
+A2 = [ 1 2; 3 4];
+plot(3*x1, 7*x2,'g');
+ 
+ 
+A3 = [ 1 2; 2 4];
+plot(3*x1, 6*x2,'m');
+ 
+axis([-8 8 -8 8])

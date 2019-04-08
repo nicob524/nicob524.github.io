@@ -1,0 +1,10 @@
+clear all 
+close all
+clc
+ 
+t = linspace(0,2*pi,1000);
+x1 = cos(t);
+x2 = sin(t);
+x = [ x1; x2];
+plot( x1, x2,'b');
+axis([-2,2,-2,2])

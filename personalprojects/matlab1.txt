@@ -1,0 +1,18 @@
+clear all
+close all 
+clc
+ 
+x = linspace (-1,1,25);
+y = 1;
+plot (x,y,'r');
+axis([-2,2,-2,2])
+hold on
+y = -1;
+plot (x,y,'b');
+hold on
+y = linspace (-1,1,25);
+x = -1;
+plot (x,y,'g');
+hold on
+x = 1;
+plot (x,y,'c');
